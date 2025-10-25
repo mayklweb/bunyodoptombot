@@ -9,7 +9,7 @@ function Categories() {
     isError,
     error,
     isLoading,
-  } = useQuery<CategoriesType>({
+  } = useQuery<CategoriesType[], Error>({
     queryKey: ["categories"],
     queryFn: getCategories,
   });
