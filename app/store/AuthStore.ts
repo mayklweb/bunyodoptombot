@@ -1,5 +1,4 @@
 import { makeAutoObservable } from "mobx";
-import { modalStore } from "./ModalStore";
 import { UserType } from "../types";
 
 class AuthStore {
@@ -34,7 +33,6 @@ class AuthStore {
 
       if (data.token) {
         this.setUser(data.data);
-        modalStore.close("login");
       }
       return data;
     } finally {
@@ -54,7 +52,6 @@ class AuthStore {
 
       if (data.token) {
         this.setUser(data.data);
-        modalStore.close("signup");
       }
       return data;
     } finally {
