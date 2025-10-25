@@ -6,46 +6,46 @@ import { cartStore } from "@/app/store/CartStore";
 function Cart() {
 
 
-  const [cart, setCart] = useState(
-    cartStore.cart.map((item) => ({
-      ...item,
-      selected: true, // qo‘shimcha maydon
-    }))
-  );
+  // const [cart, setCart] = useState(
+  //   cartStore.cart.map((item) => ({
+  //     ...item,
+  //     selected: true, // qo‘shimcha maydon
+  //   }))
+  // );
 
-  const [selectAll, setSelectAll] = useState(true);
+  // const [selectAll, setSelectAll] = useState(true);
 
-  // --- Select All toggle ---
-  const handleSelectAll = () => {
-    const newValue = !selectAll;
-    setSelectAll(newValue);
-    setCart((prev) => prev.map((item) => ({ ...item, selected: newValue })));
-  };
+  // // --- Select All toggle ---
+  // const handleSelectAll = () => {
+  //   const newValue = !selectAll;
+  //   setSelectAll(newValue);
+  //   setCart((prev) => prev.map((item) => ({ ...item, selected: newValue })));
+  // };
 
-  // --- Select One toggle ---
-  const handleSelectItem = (id) => {
-    setCart((prev) =>
-      prev.map((item) =>
-        item.id === id ? { ...item, selected: !item.selected } : item
-      )
-    );
-  };
+  // // --- Select One toggle ---
+  // const handleSelectItem = (id) => {
+  //   setCart((prev) =>
+  //     prev.map((item) =>
+  //       item.id === id ? { ...item, selected: !item.selected } : item
+  //     )
+  //   );
+  // };
 
-  // --- Delete Item ---
-  const handleDelete = (id) => {
-    cartStore.remove(id);
-  };
+  // // --- Delete Item ---
+  // const handleDelete = (id) => {
+  //   cartStore.remove(id);
+  // };
 
-  // --- Delete Selected Items ---
-  const handleDeleteSelected = () => {
-    setCart((prev) => prev.filter((item) => !item.selected));
-    setSelectAll(false);
-  };
+  // // --- Delete Selected Items ---
+  // const handleDeleteSelected = () => {
+  //   setCart((prev) => prev.filter((item) => !item.selected));
+  //   setSelectAll(false);
+  // };
 
-  // --- Calculation (selected items) ---
-  const totalPrice = cart
-    .filter((item) => item.selected)
-    .reduce((sum, item) => sum + item.price * item.count, 0);
+  // // --- Calculation (selected items) ---
+  // const totalPrice = cart
+  //   .filter((item) => item.selected)
+  //   .reduce((sum, item) => sum + item.price * item.count, 0);
 
 
   return (
@@ -62,8 +62,8 @@ function Cart() {
               <div className="flex items-center">
                 <input
                   type="checkbox"
-                  checked={selectAll}
-                  onChange={handleSelectAll}
+                  // checked={selectAll}
+                  // onChange={handleSelectAll}
                   className="w-5 h-5 rounded-[5px]"
                 />
                 <span className="text-sm lg:text-lg font-semibold text-[#0d0d2d] ml-2">
@@ -74,12 +74,11 @@ function Cart() {
 
             {/* Product Items */}
             <div className="w-full mx-auto mt-4 space-y-4">
-              {cart.map((item) => (
+              {/* {cart.map((item) => (
                 <div
                   key={item.id}
                   className="w-full bg-[#e5e6ff] p-4 lg:p-5 rounded-[10px] flex flex-col sm:flex-row gap-4"
                 >
-                  {/* Checkbox */}
                   <input
                     type="checkbox"
                     checked={item.selected}
@@ -87,10 +86,8 @@ function Cart() {
                     className="w-5 h-5 rounded-[5px] sm:mt-4"
                   />
 
-                  {/* Product Content */}
                   <div className="flex flex-col sm:flex-row gap-4 w-full">
-                    {/* Image (demo) */}
-                    <div className="rounded-[8px] bg-white w-full sm:w-[140px] h-[160px] sm:h-[120px] flex items-center justify-center overflow-hidden">
+                    <div className="rounded-lg bg-white w-full sm:w-[140px] h-40 sm:h-[120px] flex items-center justify-center overflow-hidden">
                       <img
                         src={`http://localhost:4000${item.images[0].url}`}
                         crossOrigin="anonymous"
@@ -99,7 +96,7 @@ function Cart() {
                       />
                     </div>
 
-                    {/* Details */}
+                    Details
                     <div className="flex flex-col justify-between gap-3 flex-1">
                       <h1 className="text-lg lg:text-2xl font-medium">
                         {item.name}
@@ -114,9 +111,8 @@ function Cart() {
                         </p>
                       </div>
 
-                      {/* Actions */}
                       <div className="flex gap-3 items-center">
-                        <div className="inline-flex gap-4 border rounded-[8px] px-3 py-2 items-center">
+                        <div className="inline-flex gap-4 border rounded-lg px-3 py-2 items-center">
                           <button onClick={() => handleDecrease(item.id)}>
                             <MinusIcon className="w-4 h-4" />
                           </button>
@@ -127,7 +123,7 @@ function Cart() {
                         </div>
                         <button
                           onClick={() => cartStore.remove(item.id)}
-                          className="border p-3 rounded-[8px] flex items-center"
+                          className="border p-3 rounded-lg flex items-center"
                         >
                           <Trash2Icon className="w-4 h-4" />
                         </button>
@@ -135,11 +131,11 @@ function Cart() {
                     </div>
                   </div>
                 </div>
-              ))}
+              ))} */}
 
-              {cart.length === 0 && (
+              {/* {cart.length === 0 && (
                 <p className="text-center text-gray-500">Savat bo‘sh 🙁</p>
-              )}
+              )} */}
             </div>
           </main>
 
@@ -148,11 +144,11 @@ function Cart() {
             <div className="w-full p-4 lg:p-5 bg-[#e5e6ff] rounded-[10px]">
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-lg lg:text-2xl font-semibold">Telefon:</h3>
-                <p className="text-base lg:text-xl">{user.phone}</p>
+                {/* <p className="text-base lg:text-xl">{user.phone}</p> */}
               </div>
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-lg lg:text-2xl font-semibold">F.I.O:</h3>
-                <p className="text-base lg:text-xl">{user.name}</p>
+                {/* <p className="text-base lg:text-xl">{user.name}</p> */}
               </div>
 
               <div className="flex flex-col sm:flex-row sm:items-start justify-between mb-3">
@@ -166,14 +162,14 @@ function Cart() {
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-lg lg:text-2xl font-semibold">Jami:</h3>
                 <p className="text-base lg:text-xl">
-                  {totalPrice.toLocaleString()} UZS
+                  {/* {totalPrice.toLocaleString()} UZS */}
                 </p>
               </div>
 
               <button
                 disabled={totalPrice === 0}
                 className="w-full text-white text-lg lg:text-xl p-3 lg:p-4 bg-[#2E3192] rounded-[10px] cursor-pointer disabled:opacity-50"
-                onClick={() => alert("To‘lov amalga oshirildi ✅")}
+                // onClick={() => alert("To‘lov amalga oshirildi ✅")}
               >
                 To‘lash
               </button>
