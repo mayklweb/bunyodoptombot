@@ -1,9 +1,11 @@
-import React from 'react'
+import Menu from "../menu";
 
 function Footer() {
   return (
-    <div>Footer</div>
-  )
+    <footer>
+      <Menu />
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

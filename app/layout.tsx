@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Providers from "./Providers";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import Menu from "./components/menu";
+import { Footer, Header } from "./components";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,9 +33,9 @@ export default function RootLayout({
       >
         <Providers>
           <div className="flex flex-col">
-            <header></header>
+            <Header />
             <main className="container flex-auto">{children}</main>
-            <footer></footer>
+            <Footer />
           </div>
         </Providers>
         <SpeedInsights />
