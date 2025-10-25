@@ -8,7 +8,7 @@ function Banner() {
   return (
     <section>
       <div className='container'>
-        <div className='mt-[80px] lg:mt-[100px] w-full h-[180px] sm:h-[320px] md:h-[360px] lg:h-[540px] xl:h-[600px] rounded-lg lg:rounded-2xl overflow-hidden'>
+        <div className='w-full h-[180px] rounded-lg lg:rounded-2xl overflow-hidden'>
           <Swiper pagination={true} spaceBetween={30} modules={[Pagination]} className="w-full h-full">
             <SwiperSlide className='bg-black rounded-lg lg:rounded-2xl'>Slide 1</SwiperSlide>
             <SwiperSlide className='bg-black rounded-lg lg:rounded-2xl'>Slide 2</SwiperSlide>
