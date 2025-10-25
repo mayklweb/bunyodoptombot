@@ -5,7 +5,6 @@ import { cartStore } from "@/app/store/CartStore";
 
 function Cart() {
 
-  console.log(user);
 
   const [cart, setCart] = useState(
     cartStore.cart.map((item) => ({
@@ -48,7 +47,6 @@ function Cart() {
     .filter((item) => item.selected)
     .reduce((sum, item) => sum + item.price * item.count, 0);
 
-  console.log(cart);
 
   return (
     <div className="bg-white flex flex-row justify-center w-full mt-6 pb-24">
