@@ -2,21 +2,29 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { getCategories, getProducts } from "@/app/api/apiservices";
+import { useQuery } from "@tanstack/react-query";
+import { CategoriesType, ProductsType } from "@/app/types";
 
 function Products() {
-  const [products, setProducts] = useState([]);
-  const [categories, setCategories] = useState([]);
+  const {
+    data: categories,
+    isError: categoriesError,
+    error: categoriesErrorData,
+    isLoading: categoriesLoading,
+  } = useQuery<CategoriesType, Error>({
+    queryKey: ["categories"],
+    queryFn: getCategories,
+  });
 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      const productList = await getProducts();
-      const categoryList = await getCategories();
-      setProducts(productList);
-      setCategories(categoryList);
-    };
-
-    fetchProducts();
-  }, []);
+  const {
+    data: products,
+    isError,
+    error,
+    isLoading,
+  } = useQuery<ProductsType[], Error>({
+    queryKey: ["products"],
+    queryFn: getProducts,
+  });
 
   console.log(products);
 
