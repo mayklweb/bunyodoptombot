@@ -1,5 +1,6 @@
 import { Home, LayoutGrid, ShoppingBag, User } from "lucide-react";
 import Link from "next/link";
+import { authStore } from "@/app/store/AuthStore";
 
 function Menu() {
   return (
@@ -33,17 +34,18 @@ function Menu() {
             </span>
             <span className="text-sm font-medium">Savat</span>
           </Link>
-          {/* <Link
+          <Link
             className="my-4 flex items-center justify-center flex-col gap-1 "
-            href={authStore.token ? "/profile" : "/login"}
+            href={"/profile"}
           >
             <span>
               <User />
             </span>
             <span className="text-sm font-medium">
-              {authStore.token ? "Hisob" : "Kirish"}
+              {/* Telegram firstname */}
+              Muhammad 
             </span>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </div>

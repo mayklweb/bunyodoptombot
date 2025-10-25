@@ -9,3 +9,10 @@ export interface ProductsType {
   price: string;
   photo: string;
 }
+
+export interface UserType {
+  id: number; // User Telegram ID
+  first_name: string; // User first name
+  last_name?: string; // User last name (optional)
+  phone: string; // User phone number
+} 
