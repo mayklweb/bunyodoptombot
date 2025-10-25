@@ -8,6 +8,8 @@ export interface ProductsType {
   name: string;
   price: string;
   photo: string;
+  stock_qty: number;
+  qty?: number;
 }
 
 export interface UserType {
@@ -15,4 +17,4 @@ export interface UserType {
   first_name: string; // User first name
   last_name?: string; // User last name (optional)
   phone: string; // User phone number
-} 
+}
