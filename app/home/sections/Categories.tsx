@@ -23,7 +23,7 @@ function Categories() {
           {categories?.map(({ id, name }) => (
             <div
               key={id}
-              className="bg-transparent rounded-xl flex items-center justify-center flex-col gap-1 cursor-pointer hover:shadow-md transition-all duration-200 ease-in-out"
+              className="bg-transparent rounded-xl flex items-center justify-center flex-col gap-1 cursor-pointer"
             >
               <div className="p-2 bg-[#CECFFF] rounded-md flex items-center justify-center">
                 <Image
