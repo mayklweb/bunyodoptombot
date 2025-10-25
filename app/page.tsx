@@ -2,6 +2,8 @@ import Home from "./home";
 
 export default function App() {
   return (
-    <Home/>
+    <div className="mt-20">
+      <Home />
+    </div>
   );
 }
