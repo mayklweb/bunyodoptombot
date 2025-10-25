@@ -82,7 +82,7 @@ function Products() {
           <div className="w-full flex justify-between items-center mt-5 lg:hidden">
             <h3 className="text-2xl">Mahsulotlar</h3>
             <button
-              onClick={() => modalStore.open("filter")}
+              // onClick={() => modalStore.open("filter")}
               className="text-lg px-6 py-1.5 text-[#2E3192] rounded-lg border-[1px] border-solid border-[#2E3192]"
             >
               Filter
