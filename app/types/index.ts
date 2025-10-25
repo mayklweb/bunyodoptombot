@@ -7,5 +7,5 @@ export interface ProductsType {
   id: number;
   name: string;
   price: string;
-  image: string;
+  photo: string;
 }

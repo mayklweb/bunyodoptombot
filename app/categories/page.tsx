@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { getCategories, getProducts } from "@/app/api/apiservices";
 import { useQuery } from "@tanstack/react-query";
 import { CategoriesType, ProductsType } from "@/app/types";
+import { HeartIcon } from "lucide-react";
 
 function Products() {
   const {
@@ -91,7 +92,7 @@ function Products() {
             <h3 className="text-2xl">Mahsulotlar</h3>
             <button
               // onClick={() => modalStore.open("filter")}
-              className="text-lg px-6 py-1.5 text-[#2E3192] rounded-lg border-[1px] border-solid border-[#2E3192]"
+              className="text-lg px-6 py-1.5 text-[#2E3192] rounded-lg border border-solid border-[#2E3192]"
             >
               Filter
             </button>
@@ -106,9 +107,7 @@ function Products() {
                   className="w-full h-full rounded-xl"
                 >
                   <div className="relative w-full h-[60%] bg-cover bg-center rounded-[10px] overflow-hidden">
-                    {/* <button className="absolute top-[12px] right-[12px] bg-white rounded-full p-2.5">
-                    <HeartIcon size={20} />
-                  </button> */}
+
                     <div className="w-full h-full">
                       <img
                         src="/candy.webp"
@@ -120,11 +119,11 @@ function Products() {
                   </div>
                   <div className="w-full p-2">
                     <h3
-                      className={`font-semibold text-[#0d0d2d] text-lg lg:text-2xl mt-1`}
+                      className={`font-medium text-[#0d0d2d] text-base mt-1`}
                     >
                       {product.name}
                     </h3>
-                    <p className={"font-semibold text-base text-[#61778d]"}>
+                    <p className={"font-medium text-sm text-[#61778d]"}>
                       {product.price}
                     </p>
                   </div>
