@@ -4,9 +4,6 @@ import { MinusIcon, PlusIcon, Trash2Icon } from "lucide-react";
 import { cartStore } from "@/app/store/CartStore";
 
 function Cart() {
-  const [user, setUser] = useState(
-    JSON.parse(localStorage.getItem("user")) || null
-  );
 
   console.log(user);
 
