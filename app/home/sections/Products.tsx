@@ -19,7 +19,7 @@ function Products() {
               </div>
               <div>
                 <h3 className="text-base font-medium">Shirinliklar</h3>
-                <p className="text-sm">33 000 USZ</p>
+                <p className="text-sm text-[#61778d]">33 000 USZ</p>
               </div>
             </div>
             <div className="flex flex-col gap-2 rounded-xl cursor-pointer">
@@ -34,7 +34,7 @@ function Products() {
               </div>
               <div>
                 <h3 className="text-base font-medium">Pechenie</h3>
-                <p className="text-sm">33 000 USZ</p>
+                <p className="text-sm text-[#61778d]">33 000 USZ</p>
               </div>
             </div>
             <div className="flex flex-col gap-2 rounded-xl cursor-pointer">
@@ -49,7 +49,7 @@ function Products() {
               </div>
               <div>
                 <h3 className="text-base font-medium">Shirinliklar</h3>
-                <p className="text-sm">33 000 USZ</p>
+                <p className="text-sm text-[#61778d]">33 000 USZ</p>
               </div>
             </div>
             <div className="flex flex-col gap-2 rounded-xl cursor-pointer">
@@ -64,7 +64,7 @@ function Products() {
               </div>
               <div>
                 <h3 className="text-base font-medium">Pechenie</h3>
-                <p className="text-sm">33 000 USZ</p>
+                <p className="text-sm text-[#61778d]">33 000 USZ</p>
               </div>
             </div>
             <div className="flex flex-col gap-2 rounded-xl cursor-pointer">
@@ -79,7 +79,7 @@ function Products() {
               </div>
               <div>
                 <h3 className="text-base font-medium">Shirinliklar</h3>
-                <p className="text-sm">33 000 USZ</p>
+                <p className="text-sm text-[#61778d]">33 000 USZ</p>
               </div>
             </div>
             <div className="flex flex-col gap-2 rounded-xl cursor-pointer">
@@ -94,7 +94,7 @@ function Products() {
               </div>
               <div>
                 <h3 className="text-base font-medium">Pechenie</h3>
-                <p className="text-sm">33 000 USZ</p>
+                <p className="text-sm text-[#61778d]">33 000 USZ</p>
               </div>
             </div>
             <div className="flex flex-col gap-2 rounded-xl cursor-pointer">
@@ -109,7 +109,7 @@ function Products() {
               </div>
               <div>
                 <h3 className="text-base font-medium">Shirinliklar</h3>
-                <p className="text-sm">33 000 USZ</p>
+                <p className="text-sm text-[#61778d]">33 000 USZ</p>
               </div>
             </div>
             <div className="flex flex-col gap-2 rounded-xl cursor-pointer">
@@ -124,7 +124,7 @@ function Products() {
               </div>
               <div>
                 <h3 className="text-base font-medium">Pechenie</h3>
-                <p className="text-sm">33 000 USZ</p>
+                <p className="text-sm text-[#61778d]">33 000 USZ</p>
               </div>
             </div>
             <div className="flex flex-col gap-2 rounded-xl cursor-pointer">
@@ -139,7 +139,7 @@ function Products() {
               </div>
               <div>
                 <h3 className="text-base font-medium">Shirinliklar</h3>
-                <p className="text-sm">33 000 USZ</p>
+                <p className="text-sm text-[#61778d]">33 000 USZ</p>
               </div>
             </div>
             <div className="flex flex-col gap-2 rounded-xl cursor-pointer">
@@ -154,7 +154,7 @@ function Products() {
               </div>
               <div>
                 <h3 className="text-base font-medium">Pechenie</h3>
-                <p className="text-sm">33 000 USZ</p>
+                <p className="text-sm text-[#61778d]">33 000 USZ</p>
               </div>
             </div>
             <div className="flex flex-col gap-2 rounded-xl cursor-pointer">
@@ -169,7 +169,7 @@ function Products() {
               </div>
               <div>
                 <h3 className="text-base font-medium">Shirinliklar</h3>
-                <p className="text-sm">33 000 USZ</p>
+                <p className="text-sm text-[#61778d]">33 000 USZ</p>
               </div>
             </div>
             <div className="flex flex-col gap-2 rounded-xl cursor-pointer">
@@ -184,7 +184,7 @@ function Products() {
               </div>
               <div>
                 <h3 className="text-base font-medium">Pechenie</h3>
-                <p className="text-sm">33 000 USZ</p>
+                <p className="text-sm text-[#61778d]">33 000 USZ</p>
               </div>
             </div>
             <div className="flex flex-col gap-2 rounded-xl cursor-pointer">
@@ -199,7 +199,7 @@ function Products() {
               </div>
               <div>
                 <h3 className="text-base font-medium">Shirinliklar</h3>
-                <p className="text-sm">33 000 USZ</p>
+                <p className="text-sm text-[#61778d]">33 000 USZ</p>
               </div>
             </div>
             <div className="flex flex-col gap-2 rounded-xl cursor-pointer">
@@ -214,7 +214,7 @@ function Products() {
               </div>
               <div>
                 <h3 className="text-base font-medium">Pechenie</h3>
-                <p className="text-sm">33 000 USZ</p>
+                <p className="text-sm text-[#61778d]">33 000 USZ</p>
               </div>
             </div>
           </div>
