@@ -99,7 +99,7 @@ function Products() {
 
           {/* Product Grid */}
           <div className="w-full grid grid-cols-2 gap-4">
-            {products.map((product, index) => (
+            {products?.map((product, index) => (
               <div key={index}>
                 <div
                   key={`product-${index}`}
