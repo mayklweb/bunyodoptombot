@@ -167,7 +167,7 @@ function Cart() {
               </div>
 
               <button
-                disabled={totalPrice === 0}
+                // disabled={totalPrice === 0}
                 className="w-full text-white text-lg lg:text-xl p-3 lg:p-4 bg-[#2E3192] rounded-[10px] cursor-pointer disabled:opacity-50"
                 // onClick={() => alert("To‘lov amalga oshirildi ✅")}
               >
