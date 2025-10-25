@@ -25,7 +25,7 @@ function Categories() {
               key={id}
               className="bg-transparent rounded-xl flex items-center justify-center flex-col gap-1 cursor-pointer"
             >
-              <div className="p-2 bg-[#CECFFF] rounded-md flex items-center justify-center">
+              <div className="p-2 bg-[#CECFFF] rounded-xl flex items-center justify-center">
                 <Image
                   src="/logo1.svg"
                   alt="categories"
