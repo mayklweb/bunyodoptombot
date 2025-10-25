@@ -23,7 +23,7 @@ function Categories() {
           {categories?.map(({ id, name }) => (
             <div
               key={id}
-              className="lg:bg-[#CECFFF] bg-transparent rounded-xl flex items-center justify-center flex-col gap-1 cursor-pointer hover:shadow-md transition-all duration-200 ease-in-out"
+              className="bg-transparent rounded-xl flex items-center justify-center flex-col gap-1 cursor-pointer hover:shadow-md transition-all duration-200 ease-in-out"
             >
               <div className="p-2 bg-[#CECFFF] rounded-md flex items-center justify-center">
                 <Image
@@ -33,7 +33,9 @@ function Categories() {
                   height={50}
                 />
               </div>
-              <p className="text-sm font-medium text-[#2e3192]">{name}</p>
+              <p className="text-sm lg:text-lg font-medium text-[#2e3192]">
+                {name}
+              </p>
             </div>
           ))}
         </div>
