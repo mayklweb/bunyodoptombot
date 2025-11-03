@@ -3,11 +3,12 @@ import { UserCircle } from "lucide-react";
 import { useEffect } from "react";
 
 function Profile() {
+  let user;
   useEffect(() => {
-    const user = localStorage.getItem("user");
+    user = localStorage.getItem("user");
     console.log(user);
   }, []);
-  
+
   return (
     <section>
       <div className="">
@@ -18,7 +19,7 @@ function Profile() {
           <h3 className="text-2xl font-medium">Muhammad</h3>
         </div>
 
-        <div>{userData}</div>
+        <div>{user}</div>
       </div>
     </section>
   );
