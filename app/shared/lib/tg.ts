@@ -1,0 +1,1 @@
+export const tg = (typeof window !== "undefined" && window.Telegram?.WebApp) ? window.Telegram.WebApp : null;
