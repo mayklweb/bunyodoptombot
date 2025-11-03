@@ -33,7 +33,7 @@ function Cart() {
 
             <div className="flex gap-2">
               {/* <div></div> */}
-              <div className="rounded-2xl overflow-hidden w-40 h-[100px]">
+              <div className="rounded-2xl overflow-hidden w-[180px] h-[120px]">
                 <Image
                   src="/cookie.webp"
                   alt="product"
