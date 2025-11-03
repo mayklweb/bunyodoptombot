@@ -14,8 +14,8 @@ export default function Providers({ children }: { children: ReactNode }) {
     tg?.disableVerticalSwipes?.();
     // main button example
     if (tg?.MainButton) {
-    tg.MainButton.setText("🛒 Open Cart");
-    tg.MainButton.show();
+    tg?.MainButton?.setText("🛒 Open Cart");
+    tg?.MainButton?.show();
     }
     } catch (e) {
     console.warn("tg init error", e);
