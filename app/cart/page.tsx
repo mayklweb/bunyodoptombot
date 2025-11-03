@@ -4,12 +4,12 @@ import { MinusIcon, PlusIcon, Trash2Icon } from "lucide-react";
 import { cartStore } from "@/app/store/CartStore";
 
 function Cart() {
-  const [cart, setCart] = useState(
-    cartStore.cart.map((item) => ({
-      ...item,
-      selected: true, // qo‘shimcha maydon
-    }))
-  );
+  // const [cart, setCart] = useState(
+  //   cartStore.cart.map((item) => ({
+  //     ...item,
+  //     selected: true, // qo‘shimcha maydon
+  //   }))
+  // );
 
   // const [selectAll, setSelectAll] = useState(true);
 
