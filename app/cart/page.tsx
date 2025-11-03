@@ -21,7 +21,7 @@ function Cart() {
   // };
 
   // // --- Select One toggle ---
-  // const handleSelectItem = (id) => {
+  // const handleSelectItem = (id: number) => {
   //   setCart((prev) =>
   //     prev.map((item) =>
   //       item.id === id ? { ...item, selected: !item.selected } : item
@@ -64,7 +64,7 @@ function Cart() {
             </div>
           </div>
 
-          <div className="w-full mx-auto mt-4 space-y-4">
+          {/* <div className="w-full mx-auto mt-4 space-y-4">
             {cart.map((item) => (
               <div
                 key={item.id}
@@ -126,7 +126,7 @@ function Cart() {
             {cart.length === 0 && (
               <p className="text-center text-gray-500">Savat bo‘sh 🙁</p>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
