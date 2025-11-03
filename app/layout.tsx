@@ -34,6 +34,8 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
         <meta name="theme-color" content="#000000" />
+        <script src="https://telegram.org/js/telegram-web-app.js" />
+
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
