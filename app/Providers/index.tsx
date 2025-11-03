@@ -7,20 +7,21 @@ import { tg } from "../shared/lib/tg";
 export default function Providers({ children }: { children: ReactNode }) {
   const [queryClient] = useState(() => new QueryClient());
 
+  const tg = typeof window !== "undefined" ? window.Telegram?.WebApp : null;
+
   useEffect(() => {
     try {
-    tg?.ready();
-    tg?.expand?.();
-    tg?.disableVerticalSwipes?.();
-    // main button example
-    if (tg?.MainButton) {
-    tg?.MainButton?.setText("🛒 Open Cart");
-    tg?.MainButton?.show();
+      tg?.ready?.();
+      tg?.expand?.();
+      tg?.disableVerticalSwipes?.();
+  
+      tg?.MainButton?.setText("🛒 Open Cart");
+      tg?.MainButton?.show();
+    } catch (err) {
+      console.log(err);
     }
-    } catch (e) {
-    console.warn("tg init error", e);
-    }
-    }, []);
+  }, []);
+  
   return (
     <QueryClientProvider client={queryClient}>
       <>{children}</>
