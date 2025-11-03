@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { getCategories, getProducts } from "@/app/api/apiservices";
+import { getCategories, getProducts } from "@/app/api/apiServices";
 import { useQuery } from "@tanstack/react-query";
 import { CategoriesType, ProductsType } from "@/app/types";
 import { HeartIcon } from "lucide-react";
@@ -98,16 +98,15 @@ function Products() {
             </button>
           </div>
 
-          {/* Product Grid */}
           <div className="w-full grid grid-cols-2 gap-4">
             {products?.map((product, index) => (
-              <div key={index}>
-                <div
-                  key={`product-${index}`}
-                  className="w-full h-full rounded-xl"
-                >
+              <Link
+                href={`/products/${product.id}`}
+                key={index}
+                className="w-full h-full rounded-xl"
+              >
+                <div key={index} className="w-full h-full rounded-xl">
                   <div className="relative w-full h-[60%] bg-cover bg-center rounded-[10px] overflow-hidden">
-
                     <div className="w-full h-full">
                       <img
                         src="/candy.webp"
@@ -118,9 +117,7 @@ function Products() {
                     </div>
                   </div>
                   <div className="w-full p-2">
-                    <h3
-                      className={`font-medium text-[#0d0d2d] text-base mt-1`}
-                    >
+                    <h3 className={`font-medium text-[#0d0d2d] text-base mt-1`}>
                       {product.name}
                     </h3>
                     <p className={"font-medium text-sm text-[#61778d]"}>
@@ -128,27 +125,7 @@ function Products() {
                     </p>
                   </div>
                 </div>
-                {/* <div
-                  onClick={() => openProductModal(product)}
-                  key={index}
-                  className="w-full h-full rounded-[20px]"
-                >
-                  <div className="relative w-full h-[60%] rounded-[20px] overflow-hidden">
-                    
-                    <img
-                      className="w-full h-full object-cover"
-                      src={"/product.jfif"}
-                      alt=""
-                    />
-                  </div>
-                  <h3 className="mt-[5px] font-semibold text-[#283645] text-xl">
-                    {product.name}
-                  </h3>
-                  <p className="text-[#61778d] text-sm font-semibold">
-                    {product.price}
-                  </p>
-                </div> */}
-              </div>
+              </Link>
             ))}
           </div>
         </div>

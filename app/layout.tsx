@@ -34,7 +34,9 @@ export default function RootLayout({
         <Providers>
           <div className="flex flex-col">
             <Header />
-            <main className="container flex-auto">{children}</main>
+            <main className="container">
+              <div className="mt-[100px]">{children}</div>
+            </main>
             <Footer />
           </div>
         </Providers>

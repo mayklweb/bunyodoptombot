@@ -4,7 +4,7 @@ import { authStore } from "@/app/store/AuthStore";
 
 function Menu() {
   return (
-    <div className="fixed bottom-0 left-0 w-full border-t-[0.5px] border-solid border-[#999] bg-[#FAFAFA]">
+    <div className="fixed bottom-0 left-0 w-full border-t-[0.5px] border-solid border-[#999] bg-[#FAFAFA] px-2">
       <div className="container">
         <div className="flex items-center justify-between">
           <Link
@@ -43,7 +43,7 @@ function Menu() {
             </span>
             <span className="text-sm font-medium">
               {/* Telegram firstname */}
-              Muhammad 
+              Muhammad
             </span>
           </Link>
         </div>

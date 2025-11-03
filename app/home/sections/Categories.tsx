@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useQuery } from "@tanstack/react-query";
 import { CategoriesType } from "@/app/types";
-import { getCategories } from "@/app/api/apiservices";
+import { getCategories } from "@/app/api/apiServices";
 
 function Categories() {
   const {
