@@ -8,6 +8,7 @@ function Profile() {
     user = localStorage.getItem("user");
     console.log(user);
   }, []);
+  alert(user);
 
   return (
     <section>
