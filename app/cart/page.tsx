@@ -41,10 +41,9 @@ function Cart() {
                   height={120}
                 />
               </div>
-              <div className="flex flex-col flex-auto">
+              <div className="flex flex-col flex-auto justify-between">
                 <div>
                   <h3 className="text-xl font-medium">SNIKERS</h3>
-                  <p className="text-base font-medium">SHOKALAD</p>
                   <p className="text-lg">33 000 USZ</p>
                 </div>
                 <div className="flex items-center justify-between mt-2">
