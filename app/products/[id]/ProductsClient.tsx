@@ -6,11 +6,7 @@ import { ProductsType } from "@/app/types";
 
 export default function ProductsClient({ id }: { id: number }) {
   const {
-    data: products,
-    isError,
-    error,
-    isLoading,
-  } = useQuery({
+    data: products, isError, error, isLoading,} = useQuery<ProductsType[], Error>({
     queryKey: ["products"],
     queryFn: getProducts,
   });
