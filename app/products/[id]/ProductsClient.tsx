@@ -1,6 +1,6 @@
 "use client";
 import { useQuery } from "@tanstack/react-query";
-import { getProducts } from "@/app/shared/api/apiservices";
+import { getProducts } from "@/app/shared/api/apiServices";
 import { ProductsType } from "@/app/types";
 
 export default function ProductsClient({ id }: { id: number }) {
