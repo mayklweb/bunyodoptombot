@@ -9,7 +9,7 @@ export default function Providers({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (typeof window !== "undefined" && window.Telegram?.WebApp) {
       const tg = window.Telegram.WebApp;
-      
+      localStorage.setItem("user", tg.initDataUnsafe?.user ? JSON.stringify(tg.initDataUnsafe.user) : "");
       tg.ready();
       tg.expand();
       tg.disableVerticalSwipes();
