@@ -1,8 +1,13 @@
-// "use client";
+"use client";
 import { UserCircle } from "lucide-react";
+import { useEffect } from "react";
 
 function Profile() {
-  const userData = localStorage.getItem("user");
+  useEffect(() => {
+    const user = localStorage.getItem("user");
+    console.log(user);
+  }, []);
+  
   return (
     <section>
       <div className="">
