@@ -6,8 +6,8 @@ import Image from "next/image";
 function Cart() {
   return (
     <section className="mt-20">
-      <div className="w-full shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)]">
-        <h1 className="text-xl font-semibold mb-4 text-center ">
+      <div className="w-full pb-2 shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)]">
+        <h1 className="text-xl font-semibold text-center ">
           Tovarlar tanlanmagan
         </h1>
       </div>
