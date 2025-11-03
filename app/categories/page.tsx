@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { getCategories, getProducts } from "@/app/shared/api/apiservices";
+import { getCategories, getProducts } from "@/app/shared/api/apiServices";
 import { useQuery } from "@tanstack/react-query";
 import { CategoriesType, ProductsType } from "@/app/types";
 import { HeartIcon } from "lucide-react";
