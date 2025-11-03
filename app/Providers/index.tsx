@@ -7,13 +7,14 @@ export default function Providers({ children }: { children: ReactNode }) {
   const [queryClient] = useState(() => new QueryClient());
 
   useEffect(() => {
-    if (window.Telegram?.WebApp) {
+    if (typeof window !== "undefined" && window.Telegram?.WebApp) {
       const tg = window.Telegram.WebApp;
       tg.ready();
       tg.disableVerticalSwipes();
       tg.expand();
     }
   }, []);
+  
 
   return (
     <QueryClientProvider client={queryClient}>

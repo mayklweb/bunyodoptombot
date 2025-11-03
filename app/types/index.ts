@@ -18,3 +18,21 @@ export interface UserType {
   last_name?: string; // User last name (optional)
   phone: string; // User phone number
 }
+
+interface TelegramWebApp {
+  ready: () => void;
+  expand: () => void;
+  disableVerticalSwipes: () => void;
+  initData: string;
+  initDataUnsafe: any;
+  themeParams: any;
+  colorScheme: string;
+}
+
+interface TelegramWindow extends Window {
+  Telegram?: {
+    WebApp: TelegramWebApp;
+  };
+}
+
+declare const window: TelegramWindow;
