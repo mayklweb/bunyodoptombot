@@ -7,8 +7,8 @@ function Profile() {
   useEffect(() => {
     user = localStorage.getItem("user");
     console.log(user);
+    alert(user);
   }, []);
-  alert(user);
 
   return (
     <section>
