@@ -15,6 +15,7 @@ function Products() {
                   alt="product"
                   width={300}
                   height={200}
+                  priority
                 />
               </div>
               <div>
@@ -30,6 +31,7 @@ function Products() {
                   alt="product"
                   width={300}
                   height={200}
+                  priority
                 />
               </div>
               <div>
@@ -45,6 +47,7 @@ function Products() {
                   alt="product"
                   width={300}
                   height={200}
+                  priority
                 />
               </div>
               <div>
@@ -60,6 +63,7 @@ function Products() {
                   alt="product"
                   width={300}
                   height={200}
+                  priority
                 />
               </div>
               <div>
@@ -75,6 +79,7 @@ function Products() {
                   alt="product"
                   width={300}
                   height={200}
+                  priority
                 />
               </div>
               <div>
@@ -90,6 +95,7 @@ function Products() {
                   alt="product"
                   width={300}
                   height={200}
+                  priority
                 />
               </div>
               <div>
@@ -105,6 +111,7 @@ function Products() {
                   alt="product"
                   width={300}
                   height={200}
+                  priority
                 />
               </div>
               <div>
@@ -120,6 +127,7 @@ function Products() {
                   alt="product"
                   width={300}
                   height={200}
+                  priority
                 />
               </div>
               <div>
@@ -135,6 +143,7 @@ function Products() {
                   alt="product"
                   width={300}
                   height={200}
+                  priority
                 />
               </div>
               <div>
@@ -150,6 +159,7 @@ function Products() {
                   alt="product"
                   width={300}
                   height={200}
+                  priority
                 />
               </div>
               <div>
@@ -165,6 +175,7 @@ function Products() {
                   alt="product"
                   width={300}
                   height={200}
+                  priority
                 />
               </div>
               <div>
@@ -180,36 +191,7 @@ function Products() {
                   alt="product"
                   width={300}
                   height={200}
-                />
-              </div>
-              <div>
-                <h3 className="text-base font-medium">Pechenie</h3>
-                <p className="text-sm text-[#61778d]">33 000 USZ</p>
-              </div>
-            </div>
-            <div className="flex flex-col gap-2 rounded-xl cursor-pointer">
-              <div className="w-full h-full rounded-xl overflow-hidden">
-                <Image
-                  className="w-full h-full object-cover"
-                  src="/candy.webp"
-                  alt="product"
-                  width={300}
-                  height={200}
-                />
-              </div>
-              <div>
-                <h3 className="text-base font-medium">Shirinliklar</h3>
-                <p className="text-sm text-[#61778d]">33 000 USZ</p>
-              </div>
-            </div>
-            <div className="flex flex-col gap-2 rounded-xl cursor-pointer">
-              <div className="w-full h-full rounded-xl overflow-hidden">
-                <Image
-                  className="w-full h-full object-cover"
-                  src="/cookie.webp"
-                  alt="product"
-                  width={300}
-                  height={200}
+                  priority
                 />
               </div>
               <div>

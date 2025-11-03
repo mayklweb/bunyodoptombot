@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Providers from "./Providers";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import Menu from "./components/menu";
-import { Footer, Header } from "./components";
+import { AppHeader } from "./widgets/AppHeader";
+import { AppFooter } from "./widgets/AppFooter";
+// import { SpeedInsights } from "@vercel/speed-insights/next";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,14 +34,14 @@ export default function RootLayout({
       >
         <Providers>
           <div className="flex flex-col">
-            <Header />
-            <main className="container">
+            <AppHeader />
+            <main className="">
               <div className="mt-[100px]">{children}</div>
             </main>
-            <Footer />
+            <AppFooter />
           </div>
         </Providers>
-        <SpeedInsights />
+        {/* <SpeedInsights /> */}
       </body>
     </html>
   );
