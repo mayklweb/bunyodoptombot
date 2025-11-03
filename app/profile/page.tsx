@@ -1,3 +1,4 @@
+"use client";
 import { UserCircle } from "lucide-react";
 
 function Profile() {
