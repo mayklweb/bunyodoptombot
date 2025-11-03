@@ -2,6 +2,7 @@
 import { UserCircle } from "lucide-react";
 
 function Profile() {
+  const userData = localStorage.getItem("user");
   return (
     <section>
       <div className="">
@@ -11,6 +12,8 @@ function Profile() {
           </div>
           <h3 className="text-2xl font-medium">Muhammad</h3>
         </div>
+
+        <div>{userData}</div>
       </div>
     </section>
   );
