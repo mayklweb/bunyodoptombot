@@ -29,10 +29,10 @@ interface TelegramWebApp {
   colorScheme: string;
 }
 
-interface TelegramWindow extends Window {
-  Telegram?: {
-    WebApp: TelegramWebApp;
-  };
-}
+// interface TelegramWindow extends Window {
+//   Telegram?: {
+//     WebApp: TelegramWebApp;
+//   };
+// }
 
-declare const window: TelegramWindow;
+// declare const window: TelegramWindow;
