@@ -37,8 +37,8 @@ function Cart() {
                 <Image
                   src="/cookie.webp"
                   alt="product"
-                  width={160}
-                  height={100}
+                  width={180}
+                  height={120}
                 />
               </div>
               <div className="flex flex-col flex-auto">
