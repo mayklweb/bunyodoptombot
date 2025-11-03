@@ -36,7 +36,7 @@ export default function RootLayout({
           <div className="flex flex-col">
             <AppHeader />
             <main className="">
-              <div className="mt-[100px]">{children}</div>
+              <div className="">{children}</div>
             </main>
             <AppFooter />
           </div>
