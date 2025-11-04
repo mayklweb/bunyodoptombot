@@ -25,7 +25,7 @@ export default function ProductsClient({ id }: { id: number }) {
       <div className="container">
         <div className="mt-5">
           <div>
-            <div className="rounded-2xl overflow-hidden w-full h-60">
+            <div className="rounded-3xl overflow-hidden w-full h-60">
               <Image
                 className="w-full h-full object-cover"
                 src="/cookie.webp"
