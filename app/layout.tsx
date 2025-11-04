@@ -1,18 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import Providers from "./Providers";
 import { AppHeader } from "./widgets/AppHeader";
 import { AppFooter } from "./widgets/AppFooter";
 // import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const instrumentSans = Instrument_Sans({
+  variable: "--font-Instrument-sans",
   subsets: ["latin"],
 });
 
@@ -30,11 +25,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script src="https://telegram.org/js/telegram-web-app.js" />
-
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${instrumentSans.variable} antialiased`}>
         <Providers>
           <div className="flex flex-col">
             <AppHeader />
