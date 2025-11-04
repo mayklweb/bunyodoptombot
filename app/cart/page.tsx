@@ -44,17 +44,17 @@ function Cart() {
                   <p className="text-lg">33 000 USZ</p>
                 </div>
                 <div className="flex items-center justify-between mt-2">
-                  <div className="flex items-center gap-4 border border-[#cccccc] border-solid rounded-xl px-3 py-1.5">
-                    <button>
+                  <div className="flex items-center gap-3 border border-[#cccccc] border-solid rounded-xl ">
+                    <button className="p-1.5">
                       <Minus />
                     </button>
                     <p>1</p>
-                    <button>
+                    <button className="p-1.5">
                       <Plus />
                     </button>
                   </div>
                   <div>
-                    <button>
+                    <button className="p-1.5">
                       <Trash2 />
                     </button>
                   </div>
@@ -77,17 +77,17 @@ function Cart() {
                   <p className="text-lg">33 000 USZ</p>
                 </div>
                 <div className="flex items-center justify-between mt-2">
-                  <div className="flex items-center gap-4 border border-[#cccccc] border-solid rounded-xl px-3 py-1.5">
-                    <button>
+                  <div className="flex items-center gap-3 border border-[#cccccc] border-solid rounded-xl">
+                    <button className="p-1.5">
                       <Minus />
                     </button>
-                    <p>1</p>
-                    <button>
+                    <p>25</p>
+                    <button className="p-1.5">
                       <Plus />
                     </button>
                   </div>
                   <div>
-                    <button>
+                    <button className="p-1.5">
                       <Trash2 />
                     </button>
                   </div>
