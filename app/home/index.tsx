@@ -3,11 +3,11 @@ import { Banner, Categories, Products } from "./sections";
 
 function Home() {
   return (
-    <>
+    <div className="mt-5">
       <Banner />
       <Categories />
       <Products />
-    </>
+    </div>
   );
 }
 
