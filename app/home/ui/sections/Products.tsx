@@ -1,4 +1,3 @@
-
 const products = [
   {
     id: 1,
@@ -48,21 +47,23 @@ function Products() {
       <div className="container">
         <div>
           <h1 className="text-xl font-semibold">Sizga yoqadiganlar</h1>
-          <header className="flex items-center justify-between w-full bg-white">
-            <h1 className=" font-medium text-black text-lg tracking-[-0.72px] leading-[18px] whitespace-nowrap">
-              Mahsulotlar: Konfetlar
-            </h1>
+          <div className="flex flex-col items-center justify-between w-full bg-white">
+            <div className="w-full">
+              <h1 className=" font-medium text-black text-xl tracking-tight leading-[100%] ">
+                Mahsulotlar: Konfetlar
+              </h1>
+            </div>
 
-            <div className="flex items-center gap-4">
-              <button className="px-5 py-2.5 bg-[#d4b6b6] rounded-lg border-black font-medium text-black text-sm tracking-tight leading-3">
+            <div className="w-full flex items-center justify-end gap-4">
+              <button className="px-6 py-3 bg-[#d4b6b6] rounded-lg border-black font-medium text-black text tracking-tight leading-3">
                 Saralash
               </button>
 
-              <button className="px-5 py-2.5 bg-[#d4b6b6] rounded-lg border-black font-medium text-black text-sm tracking-tight leading-3">
+              <button className="px-8 py-3 bg-[#d4b6b6] rounded-lg border-black font-medium text-black text tracking-tight leading-3">
                 FIlter
               </button>
             </div>
-          </header>
+          </div>
           <div className="mt-6 mb-10 grid grid-cols-2 gap-4">
             {products.map((product) => (
               <div
