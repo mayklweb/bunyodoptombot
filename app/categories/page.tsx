@@ -5,6 +5,8 @@ import { getCategories, getProducts } from "@/app/shared/api/apiServices";
 import { useQuery } from "@tanstack/react-query";
 import { CategoriesType, ProductsType } from "@/app/types";
 import { HeartIcon } from "lucide-react";
+import { useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 function Products() {
   const {
@@ -27,7 +29,17 @@ function Products() {
     queryFn: getProducts,
   });
 
-  console.log(products);
+    const router = useRouter();
+  
+    const handleCategoryClick = (slug: string, brand: string) => {
+      router.push(`/categories?category=${slug}&brands=${brand}`);
+    };
+  
+
+  const searchParams = useSearchParams();
+  const category = searchParams.get("category");
+
+  
 
   return (
     <div className="container">

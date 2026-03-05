@@ -1,5 +1,5 @@
 "use client";
-import { Banner, Categories, Products } from "./sections";
+import { Banner, Categories, Products } from "./ui/sections";
 
 function Home() {
   return (
