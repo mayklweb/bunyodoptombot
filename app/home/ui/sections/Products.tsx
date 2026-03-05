@@ -47,19 +47,19 @@ function Products() {
       <div className="container">
         <div>
           {/* <h1 className="text-xl font-semibold">Sizga yoqadiganlar</h1> */}
-          <div className="w-full flex flex-row gap-3 items-end justify-between bg-white">
+          <div className="w-full flex flex-col gap-3 items-end justify-between bg-white">
             <div className="w-full">
               <h1 className="font-medium text-black text-2xl tracking-tight leading-[100%] ">
                 Mahsulotlar: Konfetlar
               </h1>
             </div>
 
-            <div className="w-full flex items-center justify-end gap-4">
-              <button className="px-6 py-3 bg-[#d4b6b6] rounded-lg border-black font-medium text-black text tracking-tight leading-3">
+            <div className="w-full flex items-center justify-between gap-4">
+              <button className="w-full px-6 py-3 bg-[#d4b6b6] rounded-lg border-black font-medium text-black text tracking-tight leading-3">
                 Saralash
               </button>
 
-              <button className="px-8 py-3 bg-[#d4b6b6] rounded-lg border-black font-medium text-black text tracking-tight leading-3">
+              <button className="w-full px-8 py-3 bg-[#d4b6b6] rounded-lg border-black font-medium text-black text tracking-tight leading-3">
                 FIlter
               </button>
             </div>
