@@ -46,10 +46,10 @@ function Products() {
     <section>
       <div className="container">
         <div>
-          <h1 className="text-xl font-semibold">Sizga yoqadiganlar</h1>
-          <div className="flex flex-col items-center justify-between w-full bg-white">
+          {/* <h1 className="text-xl font-semibold">Sizga yoqadiganlar</h1> */}
+          <div className="w-full flex flex-col gap-3 items-center justify-between bg-white">
             <div className="w-full">
-              <h1 className=" font-medium text-black text-xl tracking-tight leading-[100%] ">
+              <h1 className="font-medium text-black text-xl tracking-tight leading-[100%] ">
                 Mahsulotlar: Konfetlar
               </h1>
             </div>
