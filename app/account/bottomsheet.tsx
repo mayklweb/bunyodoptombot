@@ -63,6 +63,7 @@ export function BottomSheet({
           right: 0,
           bottom: 0,
           zIndex: 50,
+          borderRadius: "12px",
           background: "#fff",
           boxShadow: "0 -4px 40px rgba(0,0,0,0.15)",
           transform: open ? "translateY(0)" : "translateY(100%)",
@@ -81,39 +82,41 @@ export function BottomSheet({
             top: 0,
             background: "#fff",
             zIndex: 1,
-            boxShadow: "",
           }}
           className="border-b border-gray"
         >
           {/* Title row */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "10px",
-            }}
-          >
-            <button
-              onClick={onClose}
+
+          <div className="container">
+            <div
               style={{
-                width: 24,
-                height: 24,
-                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
               }}
             >
-              <LeftArrowIcon />
-            </button>
-            <span
-              style={{ fontSize: 24, fontWeight: 500, color: "#1c1c1e" }}
-              className="text-center"
-            >
-              {title}
-            </span>
+              <button
+                onClick={onClose}
+                style={{
+                  width: 26,
+                  height: 26,
+                  cursor: "pointer",
+                }}
+              >
+                <LeftArrowIcon className="w-7 h-7" />
+              </button>
+              <span
+                style={{ fontSize: 24, fontWeight: 500, color: "#1c1c1e" }}
+                className="text-center"
+              >
+                {title}
+              </span>
+            </div>
           </div>
         </div>
 
         {/* Content */}
-        <div className="container h-[calc(100%-64px)]"> 
+        <div className="container h-[calc(100%-64px)]">
           <div className="w-full h-full mt-16">{children}</div>
         </div>
       </div>
