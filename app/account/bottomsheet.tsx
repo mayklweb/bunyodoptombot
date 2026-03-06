@@ -77,7 +77,7 @@ export function BottomSheet({
         <div
           style={{
             width: "100%",
-            padding: "10px 20px",
+            padding: "10px 0px",
             position: "absolute",
             top: 0,
             background: "#fff",
