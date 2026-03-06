@@ -7,7 +7,8 @@ interface BottomSheetProps {
   children: React.ReactNode;
 }
 
-const EASING = "cubic-bezier(0.32, 0.72, 0, 1)";
+// const EASING = "cubic-bezier(0.32, 0.72, 0, 1)";
+const EASING = "ease";
 
 function XIcon() {
   return (
