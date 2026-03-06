@@ -67,19 +67,21 @@ export function BottomSheet({
           boxShadow: "0 -4px 40px rgba(0,0,0,0.15)",
           transform: open ? "translateY(0)" : "translateY(100%)",
           transition: `transform 0.38s ${EASING}`,
-          height: "95svh",
+          maxHeight: "95svh",
+          height: "100%",
           overflowY: "auto",
         }}
       >
         {/* Handle + header */}
         <div
           style={{
+            width: "100%",
             padding: "10px 20px",
-            position: "sticky",
+            position: "absolute",
             top: 0,
             background: "#fff",
             zIndex: 1,
-            boxShadow: ""
+            boxShadow: "",
           }}
           className="border-b border-gray"
         >
@@ -99,16 +101,21 @@ export function BottomSheet({
                 cursor: "pointer",
               }}
             >
-             <LeftArrowIcon/>
+              <LeftArrowIcon />
             </button>
-            <span style={{ fontSize: 24, fontWeight: 600, color: "#1c1c1e" }} className="text-center">
+            <span
+              style={{ fontSize: 24, fontWeight: 600, color: "#1c1c1e" }}
+              className="text-center"
+            >
               {title}
             </span>
           </div>
         </div>
 
         {/* Content */}
-        <div className="p-5">{children}</div>
+        <div className="container"> 
+          <div className="w-full h-full mt-16">{children}</div>
+        </div>
       </div>
     </>
   );

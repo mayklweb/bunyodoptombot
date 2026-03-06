@@ -7,7 +7,9 @@ import { FIELD_CONFIG, INITIAL_FIELDS } from "./constants";
 export function PersonalInfo() {
   const [fields, setFields] = useState<ProfileFields>(INITIAL_FIELDS);
   const [editingField, setEditingField] = useState<FieldKey | null>(null);
-  const inputRefs = useRef<Partial<Record<FieldKey, HTMLInputElement | null>>>({});
+  const inputRefs = useRef<Partial<Record<FieldKey, HTMLInputElement | null>>>(
+    {},
+  );
 
   useEffect(() => {
     if (editingField) inputRefs.current[editingField]?.focus();
@@ -20,13 +22,12 @@ export function PersonalInfo() {
     setFields((prev) => ({ ...prev, [key]: value }));
 
   return (
-    <div>
+    <div className="w-full h-full">
       <div className="hidden lg:block lg:mb-3">
         <h1 className="text-2xl font-semibold">Shaxsiy ma'lumotlar</h1>
       </div>
       <div className="flex flex-col gap-2.5">
-        {FIELD_CONFIG
-        .map(({ key, label, disabled }) => (
+        {FIELD_CONFIG.map(({ key, label, disabled }) => (
           <ProfileField
             key={key}
             label={label}
@@ -35,7 +36,9 @@ export function PersonalInfo() {
             disabled={disabled}
             onChange={(e) => handleChange(key, e.target.value)}
             onToggle={() => handleToggle(key)}
-            inputRef={(el) => { inputRefs.current[key] = el; }}
+            inputRef={(el) => {
+              inputRefs.current[key] = el;
+            }}
           />
         ))}
       </div>
