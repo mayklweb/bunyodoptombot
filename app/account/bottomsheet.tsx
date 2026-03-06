@@ -67,7 +67,7 @@ export function BottomSheet({
           boxShadow: "0 -4px 40px rgba(0,0,0,0.15)",
           transform: open ? "translateY(0)" : "translateY(100%)",
           transition: `transform 0.38s ${EASING}`,
-          height: "95vh",
+          height: "95svh",
           overflowY: "auto",
         }}
       >
