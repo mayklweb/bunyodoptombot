@@ -3,12 +3,49 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-nunito: var(--font-nunito);
+  --radius: 0.625rem;
+  --gray: #e5e7eb ;
+  --background: #ffffff;
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: #cecfff;
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: #2e3192;
+  --primary-foreground: #ffffff;
+  --secondary: #cecfff;
+  --secondary-foreground: #cecfff;
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --error: #ff0000;
+  --error-foreground: #ffd1d1;
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-Instrument-sans);
+  --font-nunito: var(--font-nunito);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-gray: var(--gray);
+  --color-error: var(--error);
+  --color-error-foreground: var(--error-foreground);
 }
 
 @media (prefers-color-scheme: light) {
@@ -24,9 +61,21 @@ body {
   font-family: var(--font-sans);
 }
 
-
 .container {
-  max-width: 440px;
+  max-width: 768px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 1rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
 }
