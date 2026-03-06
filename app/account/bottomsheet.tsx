@@ -113,7 +113,7 @@ export function BottomSheet({
         </div>
 
         {/* Content */}
-        <div className="container"> 
+        <div className="container h-[calc(100%-64px)]"> 
           <div className="w-full h-full mt-16">{children}</div>
         </div>
       </div>
