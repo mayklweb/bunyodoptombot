@@ -63,7 +63,6 @@ export function BottomSheet({
           right: 0,
           bottom: 0,
           zIndex: 50,
-          borderRadius: "12px",
           background: "#fff",
           boxShadow: "0 -4px 40px rgba(0,0,0,0.15)",
           transform: open ? "translateY(0)" : "translateY(100%)",
@@ -72,6 +71,7 @@ export function BottomSheet({
           height: "100%",
           overflowY: "auto",
         }}
+        className="rounded-t-xl"
       >
         {/* Handle + header */}
         <div

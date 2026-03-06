@@ -8,12 +8,12 @@ import {
 import { FieldConfig, NavItem, ProfileFields } from "./types";
 
 export const NAV_ITEMS: NavItem[] = [
-  { key: "personal",  icon: FileIcon,     label: "Shaxsiy ma'lumotlar" },
-  { key: "shop",      icon: MarketIcon,   label: "Mening duko'nim" },
-  { key: "orders",    icon: DeliveryIcon, label: "Mening buyurtmalarim" },
-  { key: "addresses", icon: LocationIcon, label: "Manzillar" },
-  { key: "favorites", icon: FavoriteIcon, label: "Sevimli mahsulotlar" },
-  { key: "about",     icon: FileIcon,     label: "Biz haqimizda" },
+  { key: "personal",  icon: FileIcon,     label: "Shaxsiy ma’lumotlarim" },
+  { key: "shop",      icon: MarketIcon,   label: "Do‘konim" },
+  { key: "orders",    icon: DeliveryIcon, label: "Buyurtmalarim" },
+  { key: "addresses", icon: LocationIcon, label: "Manzillarim" },
+  { key: "favorites", icon: FavoriteIcon, label: "Sevimli mahsulotlarim" },
+  // { key: "about",     icon: FileIcon,     label: "Biz haqimizda" },
 ];
 
 export const FIELD_CONFIG: FieldConfig[] = [
