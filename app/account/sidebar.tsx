@@ -16,7 +16,7 @@ export function Sidebar({ activeNav, onNavClick }: SidebarProps) {
             key={key}
             onClick={() => onNavClick(key)}
             className={[
-              "w-full px-4 py-3 border rounded-xl flex items-center gap-2 transition-all",
+              "w-full p-4 border rounded-xl flex items-center gap-2 transition-all",
               // mobile: never active
               "border-primary text-primary hover:bg-primary/10",
               // desktop: active overrides
