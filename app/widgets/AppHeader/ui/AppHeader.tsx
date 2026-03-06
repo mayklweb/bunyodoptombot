@@ -79,24 +79,24 @@ function AppHeader  ()  {
                   </form>
                 </div>
                 <div className="hidden lg:flex items-center gap-5">
-                  {/* <Link
-                    href={user ? "/profile" : "/signin"}
-                    className="text-xs flex flex-row items-center gap-1 bg-primary/10 p-2.5 rounded-lg hover:bg-secondary transition-all ease-in-out duration-300"
+                  <Link
+                    href={"/profile"}
+                    className="text-xs flex flex-row items-center gap-1 bg-primary/10 px-5 py-2.5 rounded-lg hover:bg-secondary transition-all ease-in-out duration-300"
                   >
-                    <UserIcon />
-                    <span className="text-[16px] text-primary font-semibold uppercase ">
-                      {user ? user?.name : "KIRISH"}
+                    <UserIcon className="text-primary w-6 h-6" />
+                    <span className="text-[16px] text-primary font-semibold capitalize">
+                      {"Muhammad"}
                     </span>
-                  </Link> */}
+                  </Link>
                   <Link
                     href={"/cart"}
-                    className="text-xs flex flex-row items-center gap-2 bg-primary/10 p-2.5 rounded-lg hover:bg-secondary transition-all ease-in-out duration-300"
+                    className="text-xs flex flex-row items-center gap-2 bg-primary/10 px-5 py-2.5 rounded-lg hover:bg-secondary transition-all ease-in-out duration-300"
                   >
                     <span>
-                      <CartIcon />
+                      <CartIcon className="text-primary w-6 h-6" />
                     </span>
-                    <span className="text-[16px] text-primary font-semibold uppercase">
-                      SAVAT
+                    <span className="text-[16px] text-primary font-semibold capitalize">
+                      Savat
                     </span>
                   </Link>
                 </div>

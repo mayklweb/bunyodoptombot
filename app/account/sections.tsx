@@ -25,7 +25,7 @@ export function Addresses() {
           <div className="mt-5 flex flex-col items-center gap-2">
           <h3 className="text-2xl font-semibold">Manzil mavjud emas</h3>
           <p className="text-gray-500 text-center">Hozircha sizda manzil mavjud emas manzil qo’shish uchun “Manzil qo’shish”ni bosing</p>
-          <button className="mt-2.5 px-6 py-3 text-white font-normal flex gap-3 items-center bg-primary rounded-xl">
+          <button className="mt-2.5 px-6 py-3 text-white font-normal flex gap-3 items-center bg-primary rounded-xl cursor-pointer">
             <span><PlusIcon className="text-white w-5 h-5" /></span>
             <span >Manzil qo’shish</span>
           </button>

@@ -28,10 +28,10 @@ export default function RootLayout({
       </head>
       <body className={`${instrumentSans.variable} antialiased`}>
         <Providers>
-          <div className="flex flex-col">
+          <div className="w-full h-full flex flex-col">
             <AppHeader />
-            <main className="">
-              <div className="">{children}</div>
+            <main className="w-full h-full flex flex-col flex-auto">
+              <div className="w-full h-full">{children}</div>
             </main>
             <AppFooter />
           </div>
