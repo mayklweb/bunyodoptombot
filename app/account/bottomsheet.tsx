@@ -101,7 +101,7 @@ export function BottomSheet({
             >
              <LeftArrowIcon/>
             </button>
-            <span style={{ fontSize: 18, fontWeight: 600, color: "#1c1c1e" }} className="text-center">
+            <span style={{ fontSize: 24, fontWeight: 600, color: "#1c1c1e" }} className="text-center">
               {title}
             </span>
           </div>

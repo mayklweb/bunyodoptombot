@@ -15,11 +15,15 @@ export function Sidebar({ activeNav, onNavClick }: SidebarProps) {
           <button
             key={key}
             onClick={() => onNavClick(key)}
-            className={`w-full px-4 py-3 border rounded-xl flex items-center gap-2 transition-all
-              ${isActive
-                ? "bg-secondary border-secondary text-primary"
-                : "border-primary text-primary hover:bg-primary/10"
-              }`}
+            className={[
+              "w-full px-4 py-3 border rounded-xl flex items-center gap-2 transition-all",
+              // mobile: never active
+              "border-primary text-primary hover:bg-primary/10",
+              // desktop: active overrides
+              isActive
+                ? "lg:bg-secondary lg:border-secondary"
+                : "lg:border-primary lg:hover:bg-primary/10",
+            ].join(" ")}
           >
             <Icon className="w-6 h-6 text-primary" />
             <span className="text-base font-semibold">{label}</span>
