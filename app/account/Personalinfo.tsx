@@ -21,7 +21,7 @@ export function PersonalInfo() {
 
   return (
     <div>
-      <div className="mb-3">
+      <div className="hidden lg:block lg:mb-3">
         <h1 className="text-2xl font-semibold">Shaxsiy ma'lumotlar</h1>
       </div>
       <div className="flex flex-col gap-2.5">
