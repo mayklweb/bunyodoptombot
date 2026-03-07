@@ -73,6 +73,9 @@ function Cart() {
                     alt="product"
                   />
                 </div>
+                <div>
+                  
+                </div>
                 <div className="w-full flex flex-col justify-between truncate">
                   <div>
                     <p className="w-full truncate text-base font-medium">
@@ -95,7 +98,7 @@ function Cart() {
                     <p className="font-medium w-auto">30700.00 so’m</p>
                   </div>
                 </div>
-                <input className="flex shrink-0 w-4 h-4" type="checkbox" name="" id="" />
+                <input className="flex shrink-0 w-5 h-5" type="checkbox" name="" id="" />
               </div>
               <div className="w-full h-0.5 bg-gray"></div>
               <div className="flex justify-end gap-4">
