@@ -62,7 +62,7 @@ function Cart() {
                 </div>
               </div>
             </div>
-            <div className="p-1 flex gap-2 flex-col rounded-xl">
+            <div className="p-1 flex gap-2 flex-col rounded-xl bg-accent">
               <div className=" flex gap-2">
                 <div className="ronuded-xl flex shrink-0">
                   <Image
@@ -79,7 +79,18 @@ function Cart() {
                       ВЕЧЕРНИ ОГНИ МОЛОЧНИ 3 КГ
                     </p>
                   </div>
-                  <div></div>
+                  <div>
+                    <div className="flex items-center justify-between text-sm">
+                      <p>Kategory:</p>
+                      <span></span>
+                      <p>Pecheniyalar</p>
+                    </div>
+                    <div className="flex items-center justify-between text-sm">
+                      <p>Brend:</p>
+                      <span></span>
+                      <p>N'medov</p>
+                    </div>
+                  </div>
                   <div className="w-full flex justify-end">
                     <p className="font-medium w-auto">30700.00 so’m</p>
                   </div>
