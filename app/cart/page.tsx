@@ -75,7 +75,7 @@ function Cart() {
                 </div>
                 <div className="w-full flex flex-col justify-between truncate">
                   <div>
-                    <p className="w-full truncate text-lg font-medium">
+                    <p className="w-full truncate text-base font-medium">
                       ВЕЧЕРНИ ОГНИ МОЛОЧНИ 3 КГ
                     </p>
                   </div>
