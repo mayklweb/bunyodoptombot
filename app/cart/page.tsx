@@ -62,7 +62,7 @@ function Cart() {
                 </div>
               </div>
             </div>
-            <div className="p-1 flex gap-2 flex-col rounded-xl bg-accent">
+            <div className="p-1 flex gap-3 flex-col rounded-xl bg-accent">
               <div className=" flex gap-2">
                 <div className="ronuded-xl flex shrink-0">
                   <Image
