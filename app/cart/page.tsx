@@ -62,8 +62,8 @@ function Cart() {
                 </div>
               </div>
             </div>
-            <div className="p-1 flex gap-3 flex-col rounded-xl bg-accent">
-              <div className=" flex gap-2">
+            <div className="p-2 flex gap-3 flex-col rounded-xl bg-accent">
+              <div className="flex gap-2 items-start">
                 <div className="ronuded-xl flex shrink-0">
                   <Image
                     className="rounded-xl"
@@ -95,6 +95,7 @@ function Cart() {
                     <p className="font-medium w-auto">30700.00 so’m</p>
                   </div>
                 </div>
+                <input className="flex shrink-0 w-4 h-4" type="checkbox" name="" id="" />
               </div>
               <div className="w-full h-0.5 bg-gray"></div>
               <div className="flex justify-end gap-4">
