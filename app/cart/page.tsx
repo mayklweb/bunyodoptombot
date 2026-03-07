@@ -64,22 +64,22 @@ function Cart() {
             </div>
             <div className="flex gap-2 flex-col p-1">
               <div className="flex gap-2">
-                <div className="ronuded-xl">
+                <div className="ronuded-xl flex shrink-0">
                   <Image
                     className="rounded-xl"
-                    width={140}
-                    height={105}
+                    width={160}
+                    height={120}
                     src={"/candy.webp"}
                     alt="product"
                   />
                 </div>
-                <div>
+                <div className="w-full">
                   <div>
-                    <h3>ВЕЧЕРНИ ОГНИ МОЛОЧНИ 3 КГ</h3>
+                    <h3 className="text-lg font-medium">ВЕЧЕРНИ ОГНИ МОЛОЧНИ 3 КГ</h3>
                   </div>
                   <div></div>
-                  <div>
-                    <p>30700.00 so’m</p>
+                  <div className="w-full flex justify-end">
+                    <p className="font-medium w-auto">30700.00 so’m</p>
                   </div>
                 </div>
               </div>
