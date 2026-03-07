@@ -62,8 +62,8 @@ function Cart() {
                 </div>
               </div>
             </div>
-            <div className="flex gap-2 flex-col p-1">
-              <div className="flex gap-2">
+            <div className="p-1 flex gap-2 flex-col rounded-xl">
+              <div className=" flex gap-2">
                 <div className="ronuded-xl flex shrink-0">
                   <Image
                     className="rounded-xl"
@@ -73,9 +73,11 @@ function Cart() {
                     alt="product"
                   />
                 </div>
-                <div className="w-full">
+                <div className="w-full flex flex-col justify-between truncate">
                   <div>
-                    <h3 className="text-lg font-medium">ВЕЧЕРНИ ОГНИ МОЛОЧНИ 3 КГ</h3>
+                    <p className="w-full truncate text-lg font-medium">
+                      ВЕЧЕРНИ ОГНИ МОЛОЧНИ 3 КГ
+                    </p>
                   </div>
                   <div></div>
                   <div className="w-full flex justify-end">
@@ -94,7 +96,7 @@ function Cart() {
                     <PlusIcon />
                   </button>
                 </div>
-                <button className="text-error font-medium px-4 py-2 flex items-center bg-error-foreground rounded-xl">
+                <button className="text-error font-medium px-4 py-2 flex gap-2 items-center bg-error-foreground rounded-xl">
                   <span>
                     <DeleteIcon />
                   </span>
