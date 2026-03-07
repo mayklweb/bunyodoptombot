@@ -2,6 +2,7 @@
 
 import { Minus, Plus, Trash2 } from "lucide-react";
 import Image from "next/image";
+import { DeleteIcon, MinusIcon, PlusIcon } from "../shared/icons";
 
 function Cart() {
   return (
@@ -61,37 +62,44 @@ function Cart() {
                 </div>
               </div>
             </div>
-            <div className="flex gap-2 border-t border-[#E0E0E0] border-solid py-3">
-              <div className="rounded-2xl overflow-hidden w-[180px] h-[120px]">
-                <Image
-                  src="/cookie.webp"
-                  alt="product"
-                  width={180}
-                  height={120}
-                  priority
-                />
-              </div>
-              <div className="flex flex-col flex-auto justify-between">
+            <div className="flex gap-2 flex-col p-1">
+              <div className="flex gap-2">
+                <div className="ronuded-xl">
+                  <Image
+                    className="rounded-xl"
+                    width={140}
+                    height={105}
+                    src={"/candy.webp"}
+                    alt="product"
+                  />
+                </div>
                 <div>
-                  <h3 className="text-xl font-medium">SNIKERS</h3>
-                  <p className="text-lg">33 000 USZ</p>
-                </div>
-                <div className="flex items-center justify-between mt-2">
-                  <div className="flex items-center gap-3 border border-[#cccccc] border-solid rounded-xl">
-                    <button className="p-1.5">
-                      <Minus />
-                    </button>
-                    <p>25</p>
-                    <button className="p-1.5">
-                      <Plus />
-                    </button>
-                  </div>
                   <div>
-                    <button className="p-1.5">
-                      <Trash2 />
-                    </button>
+                    <h3>ВЕЧЕРНИ ОГНИ МОЛОЧНИ 3 КГ</h3>
+                  </div>
+                  <div></div>
+                  <div>
+                    <p>30700.00 so’m</p>
                   </div>
                 </div>
+              </div>
+              <div className="w-full h-0.5 bg-gray"></div>
+              <div className="flex justify-end gap-4">
+                <div className="flex gap-2 items-center border rounded-xl">
+                  <button className="p-2">
+                    <MinusIcon />
+                  </button>
+                  <span>1</span>
+                  <button className="p-2">
+                    <PlusIcon />
+                  </button>
+                </div>
+                <button className="text-error font-medium px-4 py-2 flex items-center bg-error-foreground rounded-xl">
+                  <span>
+                    <DeleteIcon />
+                  </span>
+                  <span>Yo'q qilish</span>
+                </button>
               </div>
             </div>
           </div>
